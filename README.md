@@ -1,1 +1,3 @@
-# ChatGLM
+# 基于ChatGLM的文旅大模型微调与实战
+● 以江西文旅问答对作为数据集，利用PEFT第三方库中的LoraConfig和get_peft_model以及transformers中的trainer实现模型的LoRA微调
+● 利用Bert模型和faiss将上述问答对Instruct部分向量化并搭建支持高性能检索的向量库，将Answer部分储存在知识库中，新prompt前会加入与其相关性较高的向量对应的知识库
